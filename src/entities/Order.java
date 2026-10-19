@@ -53,7 +53,7 @@ public class Order {
     public double Total(){
         double sum = 0;
         for (OrderItem o : orderItemList){
-            sum += orderItemList.getFirst().subTotal();
+            sum += o.subTotal();
         }
         return sum;
     }
